@@ -1,0 +1,110 @@
+.calculadora {
+    box-shadow:inset 0px 0px 30px 0px rgb(255, 255, 255, 0.7);
+    background: url(depositphotos_32055419-stock-photo-blue-background-texture.jpg);
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    border: 7px solid black;
+    max-width: 600px;
+    border-radius: 20px;
+}
+.calculadora h1 {
+    font-size: 50px;
+    color: black;
+    text-shadow: 2px 2px 4px #f0eeee;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.display {
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    height: 70px;
+    
+    
+}
+
+@font-face {
+    font-family: "digital";
+    src: url(digital-7/digital-7.ttf);
+}
+
+.display input {
+    box-shadow:inset 0px 0px 10px 5px rgba(5, 5, 5, 0.7);
+    display: block;
+    height: 70px;
+    width: 425px;
+    font-size: 70px;
+    color: black;
+    text-align: center;
+    font-family: "digital";
+    background-color: rgb(255, 255, 255 , 0.7);
+
+}
+
+#lcd {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: end;
+    
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+.grid button {
+    box-shadow:inset 0px 0px 0px 2px rgba(252, 251, 251, 0.7);
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 8px;
+
+}
+
+.grid button:hover {
+    transform: scale(1.1);
+    
+}
+
+
+.grid button:nth-child(1),
+.grid button:nth-child(2),
+.grid button:nth-child(3),
+.grid button:nth-child(5),
+.grid button:nth-child(6),
+.grid button:nth-child(7),
+.grid button:nth-child(9),
+.grid button:nth-child(10),
+.grid button:nth-child(11),
+.grid button:nth-child(14) {
+    background-color: rgb(112, 101, 101);
+}
+
+.grid button:nth-child(15) {
+    background-color: darkgreen;
+}
+
+.grid button:nth-child(13) {
+    background-color: red;
+}
+
+.grid button:nth-child(4),
+.grid button:nth-child(8),
+.grid button:nth-child(12),
+.grid button:nth-child(16) {
+    background-color: yellow;
+}
